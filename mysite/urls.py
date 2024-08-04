@@ -23,4 +23,5 @@ urlpatterns = [
     # path("", admin.site.urls),
     path("app/", app_views.index),
     path("app/<int:post_id>/", app_views.post_detail),
+    path("app/new/", app_views.post_new),
 ]
