@@ -1,0 +1,12 @@
+{% extends "app/base.html" %}
+
+{% block content %}
+    {% for post in post_list %}
+        <div>
+            <a href="/app/{{ post.id }}/">
+                {{ post.id }}. {{ post.title }} : {{ post.content }}
+            </a>
+
+        </div>
+    {% endfor %}
+{% endblock %}
